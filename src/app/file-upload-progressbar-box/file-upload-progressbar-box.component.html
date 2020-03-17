@@ -1,0 +1,12 @@
+<div *ngFor="let item of progress">
+  <div style="height: 60px; min-width: 50%;display: inline-block">
+    <h6>{{ item.name }}</h6>
+    <div style="width: 90%;display: inline-block">
+        <div class="progress" style="height: 5px;margin-bottom: 20px;">
+          <div class="progress-bar" role="progressbar" [style.width.%]="item.progress" aria-valuenow="25" aria-valuemin="0" aria-valuemax="80"></div>
+        </div>
+    </div>
+    {{ item.progress }}
+  </div>
+  <button *ngIf="item.progress == 100" type="button" class="btn btn-danger" (click)="deleteProgressItem(item)">X</button>
+</div>

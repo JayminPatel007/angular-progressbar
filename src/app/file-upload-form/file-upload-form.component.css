@@ -1,0 +1,15 @@
+.dropzone {
+  width: 80%;
+  height: 200px;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.active{
+  border: blue solid 2px;
+}
+
+.disactive{
+  border: grey dashed 1px;
+}
